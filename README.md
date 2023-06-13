@@ -118,63 +118,61 @@ Q(t+1)=T′Q(t)+TQ(t)′
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Sva Chandran R
 RegisterNumber: 212222240099
-module de05(S,R,CLK,Q,QBAR);
-input S,R,CLK;
-output Q,QBAR;
-wire X,Y;
-nand(X,S,CLK);
-nand(Y,R,CLK);
-nand(Q,X,QBAR);
-nand(QBAR,Y,Q);
+SR FLIPFLOP:
+module srf(S,R,clk,Q,Qbar);
+input S,R,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+	Q=S|((~R)&Q);
+	Qbar=R|((~S)&(~Q));
+end
 endmodule
-*/
-```
 
-### JK FLIP FLOPS:
-```
-/*
-module de051(J,K,CLK,Q,QBAR);
-input J,K,CLK;
-output Q,QBAR;
-wire P,S;
-nand(P,J,CLK,QBAR);
-nand(S,K,CLK,Q);
-nand(Q,P,QBAR);
-nand(QBAR,S,Q);
+T FLIPFLOP:
+module tflip(T,clk,Q,Qbar);
+input T,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+    Q=(T&(~Q))|((~T)&Q);
+    Qbar=~Q;
+end
 endmodule
-/*
-```
 
-
-### D FLIP FLOPS:
-```
-/*
-module de052(D,CLK,Q,QBAR);
-input D,CLK;
-output Q,QBAR;
-assign DBAR=~D;
-wire X,Y;
-nand(X,D,CLK);
-nand(Y,DBAR,CLK);
-nand(Q,X,QBAR);
-nand(QBAR,Y,Q);
+D FLIPFLOP:
+module dflip(D,clk,Q,Qbar);
+input D,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+    Q=D;
+    Qbar=~Q;
+end
 endmodule
-/*
-```
 
-### T FLIP FLOPS:
-```
-/*
-module de54(T,CLK,Q,QBAR);
-input T,CLK;
-output Q,QBAR;
-wire S,R;
-nand(S,T,CLK,QBAR);
-nand(R,T,CLK,Q);
-nand(Q,S,QBAR);
-nand(QBAR,R,Q);
+JK FLIPFLOP:
+module jkflip(J,K,clk,Q,Qbar);
+input J,K,clk;
+output reg Q;
+output reg Qbar;
+initial Q=0;
+initial Qbar=1;
+always @(posedge clk)
+begin
+    Q=(J&(~Q))|((~K)&Q);
+    Qbar=~Q;
+end
 endmodule
-/*
 ```
 
 
