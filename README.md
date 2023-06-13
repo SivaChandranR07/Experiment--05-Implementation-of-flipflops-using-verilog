@@ -177,32 +177,20 @@ endmodule
 
 
 ### RTL LOGIC FOR FLIPFLOPS 
+RTL LOGIC:
+![sr1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/6f199bb7-778d-463c-beef-ab82e44c7bec)
 
-![sr1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/9d772ad9-0312-4ada-8269-e198622e5d87)
+![t1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/9d9e108a-4322-416d-90f2-53d822a20923)
 
+![d1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/9a30b91c-20cf-497a-b882-61410692a814)
 
-![JK1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/4bfa1d58-4566-4423-82a7-c764b09fd128)
+![j1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/6da9558b-7216-43d2-8a21-c08687584ea4)
 
-![D1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/0d4fff2e-7405-4e99-bc3d-3b3a7339041f)
-
-![T1](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/f02c65d0-555d-4635-a428-63f9057e8bd6)
-
-
-
-
-
-### TIMING DIGRAMS FOR FLIP FLOPS 
-
-![sr2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/dce48568-9ab7-4a6f-98b3-5a5876e07f4b)
-
-
-![JK2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/538c65a8-2395-47ec-9ad1-58ae045a80c3)
-
-![D2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/caea6ee6-eb2c-4121-a4c8-0bb5438a557a)
-
-![T2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/8347cecd-c87b-4db5-8a74-79e8cbef64a1)
-
-
+TIMING DIAGRAM:
+![sr2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/c6f0273d-ef3a-4dd7-a85d-d3a006d9af4b)
+![t2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/ab0d865f-35d6-4e46-8e5b-fcfca46d9dbf)
+![d2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/7aca489c-08d3-4bf2-b256-d1d1b6466e22)
+![jk2](https://github.com/SivaChandranR07/Experiment--05-Implementation-of-flipflops-using-verilog/assets/113497395/31890891-ee2b-4357-bcbc-1bb0f45132ad)
 
 ### RESULTS 
 Hence all the flipflops are implemented using verilog and their functionality has been validated using their functional tables.
